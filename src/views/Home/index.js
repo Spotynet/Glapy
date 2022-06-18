@@ -1,12 +1,15 @@
-import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import React from 'react'
+import { Button, SafeAreaView, Text } from 'react-native'
 
-const Home = () => {
+const Home = ({ navigation }) => {
   return (
     <SafeAreaView>
-      <Text>Home</Text>
+      <Button
+        title="Go to Some View"
+        onPress={() => navigation.navigate('SomeView')}
+      />
     </SafeAreaView>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
