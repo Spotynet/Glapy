@@ -1,5 +1,5 @@
 import React from 'react'
-import GlapyAvatar from './GlapyAvatar'
+import GlapyAvatar from '../GlapyAvatar'
 import * as Components from './style'
 
 const NavigationBar = () => {
