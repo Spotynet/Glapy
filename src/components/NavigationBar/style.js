@@ -13,10 +13,7 @@ const Container = styled.View`
 const AvatarContainer = styled.View``
 
 const LocationButtonContainer = styled.View`
-  width: 100px;
-  height: 32px;
   margin-left: 10px;
-  background-color: yellow;
 `
 
 const ActionsContainer = styled.View`

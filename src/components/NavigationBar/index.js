@@ -1,5 +1,6 @@
 import React from 'react'
 import GlapyAvatar from '../GlapyAvatar'
+import LocationButton from '../LocationButton'
 import * as Components from './style'
 
 const NavigationBar = () => {
@@ -15,7 +16,12 @@ const NavigationBar = () => {
       </Components.AvatarContainer>
 
       {/* Location button */}
-      <Components.LocationButtonContainer></Components.LocationButtonContainer>
+      <Components.LocationButtonContainer>
+        <LocationButton
+          title="Ubicación"
+          onPress={() => alert('Location button pressed')}
+        />
+      </Components.LocationButtonContainer>
 
       <Components.Spacer />
 
