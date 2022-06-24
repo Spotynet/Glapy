@@ -1,13 +1,18 @@
 import styled from 'styled-components'
 
 const Container = styled.View`
+  justify-content: flex-end;
+  width: 100%;
+  height: ${props => (props.height ? props.height : 64)}px;
+  padding-bottom: 8px;
+  background-color: #fff;
+`
+
+const BarContainer = styled.View`
   flex-direction: row;
   align-items: center;
-  width: 100%;
-  height: 84px;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: cyan;
 `
 
 const AvatarContainer = styled.View``
@@ -17,9 +22,7 @@ const LocationButtonContainer = styled.View`
 `
 
 const ActionsContainer = styled.View`
-  width: 100px;
-  height: 32px;
-  background-color: purple;
+  flex-direction: row;
 `
 
 const Spacer = styled.View`
@@ -28,6 +31,7 @@ const Spacer = styled.View`
 
 export {
   Container,
+  BarContainer,
   AvatarContainer,
   LocationButtonContainer,
   ActionsContainer,
