@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react-native'
 import React from 'react'
 import NavigationBar from '.'
 
-import CenterView from '../../../storybook/stories/CenterView'
+import CenterView from '../CenterView'
 
 storiesOf('NavigationBar', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
