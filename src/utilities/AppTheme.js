@@ -2,10 +2,10 @@
 
 const AppTheme = () => {
   const baseColors = {
-    primary: '#455a6d',
-    secondary: '#9ce73d',
+    primary: '#ff003a',
+    secondary: '#6bf35',
     background: '#f9f9f9',
-    text: '#444',
+    text: '#000',
   }
 
   const colorScheme = {
