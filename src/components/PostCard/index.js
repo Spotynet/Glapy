@@ -18,6 +18,7 @@ const PostCard = ({
   onLikePress,
   onSharePress,
   onBookmarkPress,
+  onCommentsPress
 }) => {
   if (!post) {
     return <Text>A post object is required.</Text>
@@ -85,7 +86,7 @@ const PostCard = ({
       <Components.DescriptionLabel>{post.caption}</Components.DescriptionLabel>
 
       {/* Post comments */}
-      <TouchableOpacity onPress={onAuthorPress}>
+      <TouchableOpacity onPress={onCommentsPress}>
         <Components.CommentsContainer>
           <Components.CommentsIconContainer>
             <CommentIcon width={20} height={20} />

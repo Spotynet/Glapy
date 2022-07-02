@@ -24,5 +24,6 @@ storiesOf('PostCard', module)
       onSharePress={() => alert('Share button pressed')}
       onBookmarkPress={() => alert('Bookmark pressed')}
       onAuthorPress={() => alert('Author button pressed')}
+      onCommentsPress={() => alert('Comments button pressed')}
     />
   ))
