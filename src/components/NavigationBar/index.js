@@ -1,6 +1,6 @@
 import React from 'react'
 import ActionButton from '../ActionButton'
-import GlapyAvatar from '../GlapyAvatar'
+import CustomAvatar from '../CustomAvatar'
 import LocationButton from '../LocationButton'
 import * as Components from './style'
 import SearchIcon from '../../assets/icons/busqueda.svg'
@@ -13,7 +13,7 @@ const NavigationBar = () => {
       <Components.BarContainer>
         {/* Avatar */}
         <Components.AvatarContainer>
-          <GlapyAvatar
+          <CustomAvatar
             size={40}
             // imageURL="https://loremflickr.com/120/120/dog"
             imageURL="https://insektauge.com/x/images/frog-prince.jpg"

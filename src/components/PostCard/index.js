@@ -9,7 +9,7 @@ import CommentIcon from '../../assets/icons/comentario.svg'
 import HearthIcon from '../../assets/icons/corazon.svg'
 import BookmarkIcon from '../../assets/icons/marcador.svg'
 import ActionButton from '../ActionButton'
-import GlapyAvatar from '../GlapyAvatar'
+import CustomAvatar from '../CustomAvatar'
 import * as Components from './style'
 
 const PostCard = ({
@@ -36,7 +36,7 @@ const PostCard = ({
           <Components.UserLabel>{post.author.name}</Components.UserLabel>
           <Components.AvatarContainer>
             <TouchableOpacity onPress={onAuthorPress}>
-              <GlapyAvatar size={40} imageURL={post.author.avatar || ''} />
+              <CustomAvatar size={40} imageURL={post.author.avatar || ''} />
             </TouchableOpacity>
           </Components.AvatarContainer>
         </Components.AuthorContainer>

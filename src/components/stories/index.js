@@ -1,6 +1,6 @@
 import '../ActionButton/ActionButton.stories'
 import '../CategoriesBar/CategoriesBar.stories'
-import '../GlapyAvatar/GlapyAvatar.stories'
+import '../CustomAvatar/CustomAvatar.stories'
 import '../LocationButton/LocationButton.stories'
 import '../NavigationBar/NavigationBar.stories'
 import '../PostCard/PostCard.stories'
