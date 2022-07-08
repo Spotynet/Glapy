@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "GlapyApp.app"
-               BlueprintName = "GlapyApp"
-               ReferencedContainer = "container:GlapyApp.xcodeproj">
+               BuildableName = "MyPik.app"
+               BlueprintName = "MyPik"
+               ReferencedContainer = "container:MyPik.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "GlapyAppTests.xctest"
-               BlueprintName = "GlapyAppTests"
-               ReferencedContainer = "container:GlapyApp.xcodeproj">
+               BuildableName = "MyPikTests.xctest"
+               BlueprintName = "MyPikTests"
+               ReferencedContainer = "container:MyPik.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "GlapyApp.app"
-            BlueprintName = "GlapyApp"
-            ReferencedContainer = "container:GlapyApp.xcodeproj">
+            BuildableName = "MyPik.app"
+            BlueprintName = "MyPik"
+            ReferencedContainer = "container:MyPik.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "GlapyApp.app"
-            BlueprintName = "GlapyApp"
-            ReferencedContainer = "container:GlapyApp.xcodeproj">
+            BuildableName = "MyPik.app"
+            BlueprintName = "MyPik"
+            ReferencedContainer = "container:MyPik.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -83,6 +83,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "MyPik"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
