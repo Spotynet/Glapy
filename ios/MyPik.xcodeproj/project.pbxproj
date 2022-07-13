@@ -53,11 +53,8 @@
 		3011EC5CBC3741D2868A46EB /* LeagueSpartan-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "LeagueSpartan-Thin.ttf"; path = "../src/assets/fonts/LeagueSpartan-Thin.ttf"; sourceTree = "<group>"; };
 		344B81E6505E41608B01943B /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		38E5B2505F0C40B6B356AE98 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-GlapyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlapyApp.debug.xcconfig"; path = "Target Support Files/Pods-GlapyApp/Pods-GlapyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		53435EF11C5847369317E808 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		54BC9E5605C6FCB1731B70BD /* Pods-MyPik-MyPikTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPik-MyPikTests.debug.xcconfig"; path = "Target Support Files/Pods-MyPik-MyPikTests/Pods-MyPik-MyPikTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-GlapyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlapyApp.release.xcconfig"; path = "Target Support Files/Pods-GlapyApp/Pods-GlapyApp.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-GlapyApp-GlapyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlapyApp-GlapyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-GlapyApp-GlapyAppTests/Pods-GlapyApp-GlapyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		639F53336096451EB837A3E1 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		6425C3E66BB94C90AE56C092 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		6729C082008E4392A6F3B2EB /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
@@ -65,7 +62,6 @@
 		7A2B2387DCFD493CA8DE8EA6 /* LeagueSpartan-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "LeagueSpartan-Medium.ttf"; path = "../src/assets/fonts/LeagueSpartan-Medium.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = GlapyApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85892A8AF1B34987A99FA8C4 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-GlapyApp-GlapyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlapyApp-GlapyAppTests.release.xcconfig"; path = "Target Support Files/Pods-GlapyApp-GlapyAppTests/Pods-GlapyApp-GlapyAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		94302FF0EE846BB9CF5BD281 /* libPods-MyPik.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyPik.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		978FBCC45A9F41469988E580 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		A13D370CB458BC850F7CA37F /* libPods-MyPik-MyPikTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyPik-MyPikTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,10 +207,6 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-GlapyApp.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-GlapyApp.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-GlapyApp-GlapyAppTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-GlapyApp-GlapyAppTests.release.xcconfig */,
 				D7D39A2543D0380ECA10294D /* Pods-MyPik.debug.xcconfig */,
 				A868FF2E27CF590FC335C8E3 /* Pods-MyPik.release.xcconfig */,
 				54BC9E5605C6FCB1731B70BD /* Pods-MyPik-MyPikTests.debug.xcconfig */,
@@ -567,7 +559,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8W62V32QR5;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = GlapyApp/Info.plist;
@@ -575,6 +567,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -594,13 +587,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8W62V32QR5;
 				INFOPLIST_FILE = GlapyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
