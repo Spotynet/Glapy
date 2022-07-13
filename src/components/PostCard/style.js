@@ -2,11 +2,13 @@ import styled from 'styled-components'
 
 const Container = styled.View`
   width: 100%;
+  padding-top: 18px;
   background-color: #fff;
 `
 
 const AuthorContainer = styled.View`
   position: absolute;
+  top: 18px;
   width: 100%;
   align-items: center;
   z-index: 9999;
