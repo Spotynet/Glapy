@@ -11,7 +11,7 @@ const CategoriesBar = ({ active, onPress, options }) => {
         data={options}
         keyExtractor={item => item.id}
         renderItem={({ item }) => (
-          <TouchableOpacity onPress={onPress}>
+          <TouchableOpacity onPress={() => onPress(item.id)}>
             <CategoriesBarItem title={item.name} active={active === item.id} />
           </TouchableOpacity>
         )}
