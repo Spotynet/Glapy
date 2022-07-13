@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Container = styled.View`
   justify-content: flex-end;
   width: 100%;
-  height: ${props => (props.height ? props.height : 64)}px;
+  /* height: ${props => (props.height ? props.height : 64)}px; */
   padding-bottom: 8px;
   background-color: #fff;
 `
