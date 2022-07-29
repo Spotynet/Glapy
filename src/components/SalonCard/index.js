@@ -17,26 +17,40 @@ const SalonCard = ({ salon, imageSize, onDetailsPress, onReservePress }) => {
   return (
     <Components.Container size={imageSize}>
       {/* Card image */}
-      {salon.image && (
-        <Components.ImageContainer>
-          <Image
-            source={{ uri: salon.image }}
-            indicator={Progress.Bar}
-            indicatorProps={{
-              size: 200,
-              borderWidth: 1,
-              color: theme.color.primary,
-            }}
-            style={{ width: imageSize, height: imageSize }}
-          />
-        </Components.ImageContainer>
-      )}
-      <Components.LogoContainer>
-        <CustomAvatar
-          size={40}
-          imageURL="https://insektauge.com/x/images/frog-prince.jpg"
+      <Components.ImageContainer>
+        <Image
+          source={{ uri: salon.image }}
+          indicator={Progress.Bar}
+          indicatorProps={{
+            size: 200,
+            borderWidth: 1,
+            color: theme.color.primary,
+          }}
+          style={{ width: imageSize, height: imageSize }}
         />
+      </Components.ImageContainer>
+
+      {/* Salon Logo */}
+      <Components.LogoContainer>
+        <CustomAvatar size={40} imageURL={salon.logo} />
       </Components.LogoContainer>
+
+      {/* Fav Button */}
+      <Components.FavButtonContainer></Components.FavButtonContainer>
+
+      {/* Rating and Call to Action */}
+      <Components.CTAContainer>
+        <Components.RatingContainer>
+          <Components.RatingIconContainer></Components.RatingIconContainer>
+          <Components.RatingLabel>4.5</Components.RatingLabel>
+        </Components.RatingContainer>
+
+        <Text>CTA Button</Text>
+      </Components.CTAContainer>
+
+      {/* Name and Description */}
+      <Components.Name>{salon.name}</Components.Name>
+      <Components.Description>{salon.description}</Components.Description>
     </Components.Container>
   )
 }
