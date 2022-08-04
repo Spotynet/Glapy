@@ -1,4 +1,5 @@
 import '../ActionButton/ActionButton.stories'
+import '../CapsuleButton/CapsuleButton.stories'
 import '../CategoriesBar/CategoriesBar.stories'
 import '../CustomAvatar/CustomAvatar.stories'
 import '../LocationButton/LocationButton.stories'
