@@ -1,4 +1,4 @@
-package com.glapyapp.newarchitecture.modules;
+package com.mypik.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;

@@ -1,4 +1,4 @@
-package com.glapyapp.newarchitecture;
+package com.mypik.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.glapyapp.BuildConfig;
-import com.glapyapp.newarchitecture.components.MainComponentsRegistry;
-import com.glapyapp.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.mypik.BuildConfig;
+import com.mypik.newarchitecture.components.MainComponentsRegistry;
+import com.mypik.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

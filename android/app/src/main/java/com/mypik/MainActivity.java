@@ -1,4 +1,4 @@
-package com.glapyapp;
+package com.mypik;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
