@@ -1,13 +1,17 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { Text } from 'react-native'
+import { Text, TouchableOpacity } from 'react-native'
 import Image from 'react-native-image-progress'
 import * as Progress from 'react-native-progress'
 import { useTheme } from 'styled-components'
-import * as Components from './style'
+import StarIcon from '../../assets/icons/estrella.png'
+import HeartIcon from '../../assets/icons/mypik-corazon-blanco.png'
+import ClockIcon from '../../assets/icons/time-add-free-icon-font.png'
+import CapsuleButton from '../CapsuleButton'
 import CustomAvatar from '../CustomAvatar'
+import * as Components from './style'
 
-const SalonCard = ({ salon, imageSize, onDetailsPress, onReservePress }) => {
+const SalonCard = ({ salon, imageSize, onFavoritePress, onReservePress }) => {
   if (!salon) {
     return <Text>A salon object is required.</Text>
   }
@@ -36,16 +40,26 @@ const SalonCard = ({ salon, imageSize, onDetailsPress, onReservePress }) => {
       </Components.LogoContainer>
 
       {/* Fav Button */}
-      <Components.FavButtonContainer></Components.FavButtonContainer>
+      <Components.FavButtonContainer>
+        <TouchableOpacity onPress={onFavoritePress}>
+          <Image source={HeartIcon} width={28} height={25} />
+        </TouchableOpacity>
+      </Components.FavButtonContainer>
 
       {/* Rating and Call to Action */}
       <Components.CTAContainer>
         <Components.RatingContainer>
-          <Components.RatingIconContainer></Components.RatingIconContainer>
+          <Components.RatingIconContainer>
+            <Image source={StarIcon} width={15} height={15} />
+          </Components.RatingIconContainer>
           <Components.RatingLabel>4.5</Components.RatingLabel>
         </Components.RatingContainer>
 
-        <Text>CTA Button</Text>
+        <CapsuleButton
+          title="Reservar"
+          icon={<Image source={ClockIcon} width={15} height={15} />}
+          onPress={onReservePress}
+        />
       </Components.CTAContainer>
 
       {/* Name and Description */}

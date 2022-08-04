@@ -22,7 +22,6 @@ const FavButtonContainer = styled.View`
   right: 12px;
   width: 28px;
   height: 25px;
-  background-color: red;
 `
 
 const CTAContainer = styled.View`
@@ -42,15 +41,15 @@ const RatingContainer = styled.View`
 const RatingIconContainer = styled.View`
   width: 15px;
   height: 15px;
-  background-color: red;
 `
 
 const RatingLabel = styled.Text`
   font-family: 'LeagueSpartan-Regular';
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
   color: #000;
   margin-left: 5px;
+  padding-top: 4px;
 `
 
 const Name = styled.Text`

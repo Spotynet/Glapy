@@ -22,7 +22,7 @@ storiesOf('SalonCard', module)
     <SalonCard
       salon={sampleSalon}
       imageSize={width - padding * 2}
-      onDetailsPress={() => alert('Details button pressed')}
+      onFavoritePress={() => alert('Favorite button pressed')}
       onReservePress={() => alert('Reserve button pressed')}
     />
   ))
