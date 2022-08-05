@@ -24,6 +24,14 @@ const FavButtonContainer = styled.View`
   height: 25px;
 `
 
+const PageIndicatorContainer = styled.View`
+  position: absolute;
+  bottom: 12px;
+  align-self: center;
+  width: 100%;
+  height: 10px;
+`
+
 const CTAContainer = styled.View`
   flex-direction: row;
   justify-content: space-between;
@@ -75,6 +83,7 @@ export {
   ImageContainer,
   LogoContainer,
   FavButtonContainer,
+  PageIndicatorContainer,
   CTAContainer,
   RatingContainer,
   RatingIconContainer,

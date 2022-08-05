@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
-import React from 'react'
-import { Text, TouchableOpacity } from 'react-native'
+import React, { useRef } from 'react'
+import { Animated, FlatList, Text, TouchableOpacity } from 'react-native'
+import { ScalingDot } from 'react-native-animated-pagination-dots'
 import Image from 'react-native-image-progress'
 import * as Progress from 'react-native-progress'
 import { useTheme } from 'styled-components'
@@ -17,21 +18,58 @@ const SalonCard = ({ salon, imageSize, onFavoritePress, onReservePress }) => {
   }
 
   const theme = useTheme()
+  const scrollX = useRef(new Animated.Value(0)).current
 
   return (
     <Components.Container size={imageSize}>
       {/* Card image */}
       <Components.ImageContainer>
-        <Image
-          source={{ uri: salon.image }}
-          indicator={Progress.Bar}
-          indicatorProps={{
-            size: 200,
-            borderWidth: 1,
-            color: theme.color.primary,
-          }}
-          style={{ width: imageSize, height: imageSize }}
+        <FlatList
+          horizontal
+          pagingEnabled
+          data={salon.images}
+          keyExtractor={(_, index) => index}
+          renderItem={({ item }) => (
+            <Image
+              source={{ uri: item }}
+              indicator={Progress.Bar}
+              indicatorProps={{
+                size: imageSize * 0.8,
+                borderWidth: 1,
+                color: theme.color.primary,
+              }}
+              style={{ width: imageSize, height: imageSize }}
+            />
+          )}
+          onScroll={Animated.event(
+            [{ nativeEvent: { contentOffset: { x: scrollX } } }],
+            {
+              useNativeDriver: false,
+            },
+          )}
+          showsHorizontalScrollIndicator={false}
+          decelerationRate={'normal'}
+          // scrollEventThrottle={16}
+          style={{ width: imageSize, height: imageSize, flexGrow: 0 }}
         />
+
+        {/* Page Indicator */}
+        <Components.PageIndicatorContainer>
+          <ScalingDot
+            data={salon.images}
+            scrollX={scrollX}
+            inActiveDotOpacity={0.6}
+            inActiveDotColor={theme.color.background}
+            activeDotColor={theme.color.background}
+            dotStyle={{
+              width: 8,
+              height: 8,
+              borderRadius: 4,
+              marginHorizontal: 5,
+            }}
+            containerStyle={{ top: 0 }}
+          />
+        </Components.PageIndicatorContainer>
       </Components.ImageContainer>
 
       {/* Salon Logo */}
