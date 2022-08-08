@@ -6,7 +6,7 @@ import * as Progress from 'react-native-progress'
 import { Avatar } from '@rneui/themed'
 import { useTheme } from 'styled-components'
 
-const GlapyAvatar = ({ size, imageURL, anagram }) => {
+const MyPikAvatar = ({ size, imageURL, anagram }) => {
   const theme = useTheme()
 
   return (
@@ -39,16 +39,16 @@ const GlapyAvatar = ({ size, imageURL, anagram }) => {
   )
 }
 
-GlapyAvatar.propTypes = {
+MyPikAvatar.propTypes = {
   size: PropTypes.number.isRequired,
   imageURL: PropTypes.string,
   anagram: PropTypes.string,
 }
 
-GlapyAvatar.defaultProps = {
+MyPikAvatar.defaultProps = {
   size: 24,
   imageURL: undefined,
   anagram: undefined,
 }
 
-export default GlapyAvatar
+export default MyPikAvatar
