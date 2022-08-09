@@ -228,6 +228,13 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            storeFile file('/Users/prok/Dev/Keystores/mypik-keystore')
+            storePassword 'JP$c9*AG9mUY2^X3]AXo'
+            keyAlias 'key0'
+            keyPassword 'JP$c9*AG9mUY2^X3]AXo'
+            v2SigningEnabled true
+        }
     }
     buildTypes {
         debug {
@@ -236,7 +243,7 @@ android {
         release {
             // Caution! In production, you need to generate your own keystore file.
             // see https://reactnative.dev/docs/signed-apk-android.
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
