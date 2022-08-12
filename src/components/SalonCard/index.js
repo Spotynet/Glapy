@@ -90,7 +90,7 @@ const SalonCard = ({ salon, imageSize, onFavoritePress, onReservePress }) => {
           <Components.RatingIconContainer>
             <Image source={StarIcon} width={15} height={15} />
           </Components.RatingIconContainer>
-          <Components.RatingLabel>4.5</Components.RatingLabel>
+          <Components.RatingLabel>{salon.rating}</Components.RatingLabel>
         </Components.RatingContainer>
 
         <CapsuleButton
