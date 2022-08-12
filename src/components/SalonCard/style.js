@@ -52,30 +52,30 @@ const RatingIconContainer = styled.View`
 `
 
 const RatingLabel = styled.Text`
-  font-family: 'LeagueSpartan-Regular';
+  font-family: ${props => props.theme.font.primary};
   font-size: 17px;
   font-weight: 500;
-  color: #000;
+  color: ${props => props.theme.color.text};
   margin-left: 5px;
   padding-top: 4px;
 `
 
 const Name = styled.Text`
   margin-top: 10px;
-  font-family: 'LeagueSpartan-Regular';
+  font-family: ${props => props.theme.font.primary};
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
-  color: #000;
+  color: ${props => props.theme.color.text};
 `
 
 const Description = styled.Text`
   margin-top: 6px;
-  font-family: 'LeagueSpartan-Regular';
+  font-family: ${props => props.theme.font.primary};
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-  color: #000;
+  color: ${props => props.theme.color.text};
 `
 
 export {

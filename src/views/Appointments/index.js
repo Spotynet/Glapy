@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import { Dimensions, FlatList } from 'react-native'
 import { useSelector } from 'react-redux'
+import { useTheme } from 'styled-components'
 import CategoriesBar from '../..//components/CategoriesBar'
 import NavigationBar from '../../components/NavigationBar'
 import SalonCard from '../../components/SalonCard'
 import * as Components from './style'
 
 const Home = ({ navigation }) => {
+  const theme = useTheme()
   const { data: posts } = useSelector(state => state.salons)
   const { data: categories } = useSelector(state => state.categories)
   const [activeCategoryId, setActiveCategoryId] = useState(1)
@@ -16,7 +18,7 @@ const Home = ({ navigation }) => {
   const cardWidth = width - padding * 2
 
   return (
-    <Components.Container>
+    <Components.Container theme={theme}>
       {/* Navigation and Categories */}
       <Components.Header>
         <NavigationBar />

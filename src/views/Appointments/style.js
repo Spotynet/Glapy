@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 const Container = styled.View`
   flex: 1;
-  background-color: #fff;
   height: 190px;
+  background-color: ${props => props.theme.color.background};
 `
 
 const Header = styled.View`

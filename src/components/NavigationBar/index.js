@@ -7,10 +7,13 @@ import SearchIcon from '../../assets/icons/busqueda.svg'
 import AddIcon from '../../assets/icons/agregar.svg'
 import BoltIcon from '../../assets/icons/tornillo.svg'
 import { SafeAreaView } from 'react-native'
+import { useTheme } from 'styled-components'
 
 const NavigationBar = () => {
+  const theme = useTheme()
+
   return (
-    <Components.Container>
+    <Components.Container theme={theme}>
       <SafeAreaView>
         <Components.BarContainer>
           {/* Avatar */}

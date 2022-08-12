@@ -5,7 +5,7 @@ const Container = styled.View`
   width: 100%;
   /* height: ${props => (props.height ? props.height : 64)}px; */
   padding-bottom: 8px;
-  background-color: #fff;
+  background-color: ${props => props.theme.color.background};
 `
 
 const BarContainer = styled.View`

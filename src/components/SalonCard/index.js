@@ -59,7 +59,7 @@ const SalonCard = ({ salon, imageSize, onFavoritePress, onReservePress }) => {
             data={salon.images}
             scrollX={scrollX}
             inActiveDotOpacity={0.6}
-            inActiveDotColor={theme.color.background}
+            inActiveDotColor={theme.color.backgroundAlt}
             activeDotColor={theme.color.background}
             dotStyle={{
               width: 8,
@@ -90,7 +90,9 @@ const SalonCard = ({ salon, imageSize, onFavoritePress, onReservePress }) => {
           <Components.RatingIconContainer>
             <Image source={StarIcon} width={15} height={15} />
           </Components.RatingIconContainer>
-          <Components.RatingLabel>{salon.rating}</Components.RatingLabel>
+          <Components.RatingLabel theme={theme}>
+            {salon.rating}
+          </Components.RatingLabel>
         </Components.RatingContainer>
 
         <CapsuleButton
@@ -101,8 +103,10 @@ const SalonCard = ({ salon, imageSize, onFavoritePress, onReservePress }) => {
       </Components.CTAContainer>
 
       {/* Name and Description */}
-      <Components.Name>{salon.name}</Components.Name>
-      <Components.Description>{salon.description}</Components.Description>
+      <Components.Name theme={theme}>{salon.name}</Components.Name>
+      <Components.Description theme={theme}>
+        {salon.description}
+      </Components.Description>
     </Components.Container>
   )
 }

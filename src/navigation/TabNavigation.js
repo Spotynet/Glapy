@@ -9,10 +9,13 @@ import MapIconActive from '../assets/icons/map-tab-icon-active.png'
 import MapIcon from '../assets/icons/map-tab-icon.png'
 import SearchIconActive from '../assets/icons/search-tab-icon-active.png'
 import SearchIcon from '../assets/icons/search-tab-icon.png'
+import { useTheme } from 'styled-components'
 
 const Tab = createBottomTabNavigator()
 
 export default () => {
+  const theme = useTheme()
+
   return (
     <Tab.Navigator
       initialRouteName="HomeTab"
@@ -41,10 +44,14 @@ export default () => {
               return <Image source={MapIcon} width={25} height={25} />
           }
         },
-        tabBarActiveTintColor: '#000',
-        tabBarInactiveTintColor: '#000',
+        tabBarActiveTintColor: theme.color.text,
+        tabBarInactiveTintColor: theme.color.text,
+        tabBarStyle: {
+          backgroundColor: theme.color.background,
+        },
         tabBarLabelStyle: {
-          fontFamily: 'LeagueSpartan-Semibold',
+          fontFamily: 'LeagueSpartan-Regular',
+          fontWeight: '600',
           fontSize: 9,
         },
         headerShown: false,
