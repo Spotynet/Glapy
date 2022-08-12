@@ -1,14 +1,14 @@
 import { NavigationContainer } from '@react-navigation/native'
 import React from 'react'
+import { useColorScheme } from 'react-native'
 import { ThemeProvider } from 'styled-components'
 import StorybookUIRoot from '../storybook'
-import Unauthorized from './navigation/Unauthorized'
 import TabNavigation from './navigation/TabNavigation'
-import AppTheme from './utilities/AppTheme'
+import appTheme from './utilities/appTheme'
 
 const App = () => {
   return (
-    <ThemeProvider theme={AppTheme}>
+    <ThemeProvider theme={appTheme(useColorScheme())}>
       <NavigationContainer>
         <TabNavigation />
       </NavigationContainer>
@@ -18,11 +18,11 @@ const App = () => {
 
 const Storybook = () => {
   return (
-    <ThemeProvider theme={AppTheme}>
+    <ThemeProvider theme={appTheme(useColorScheme())}>
       <StorybookUIRoot />
     </ThemeProvider>
   )
 }
 
-export default App;
+export default App
 // export default Storybook

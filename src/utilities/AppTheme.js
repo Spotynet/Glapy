@@ -1,23 +1,29 @@
-// import { useColorScheme } from 'react-native'
-
-const AppTheme = () => {
+const appTheme = scheme => {
   const baseColors = {
     primary: '#ff003a',
-    secondary: '#6bf35',
-    background: '#f9f9f9',
+    secondary: '#2946DF',
+    background: '#fff',
+    backgroundAlt: '#f9f9f9',
     text: '#000',
+    textAlt: '#242424',
   }
 
   const colorScheme = {
-    light: { ...baseColors },
+    light: {
+      ...baseColors,
+    },
     dark: {
       ...baseColors,
-      background: '#444',
+      background: '#353535',
       text: '#f9f9f9',
     },
   }
-  return { color: colorScheme['light'] }
-  // return { colors: colorScheme[useColorScheme()] }
+
+  const fonts = {
+    primary: 'LeagueSpartan-Regular',
+  }
+
+  return { color: colorScheme[scheme], font: fonts }
 }
 
-export default AppTheme
+export default appTheme
