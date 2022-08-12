@@ -1,7 +1,8 @@
-import * as React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import Home from '../views/Home'
+import * as React from 'react'
 import { Button, SafeAreaView } from 'react-native'
+import Appointments from '../views/Appointments'
+import Home from '../views/Home'
 
 const Stack = createNativeStackNavigator()
 
@@ -15,10 +16,15 @@ const SomeView = ({ navigation }) => {
 
 const Unauthorized = () => {
   return (
-    <Stack.Navigator initialRouteName="Home">
+    <Stack.Navigator initialRouteName="Appointments">
       <Stack.Screen
         name="Home"
         component={Home}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Appointments"
+        component={Appointments}
         options={{ headerShown: false }}
       />
       <Stack.Screen

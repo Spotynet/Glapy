@@ -3,13 +3,14 @@ import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import StorybookUIRoot from '../storybook'
 import Unauthorized from './navigation/Unauthorized'
+import TabNavigation from './navigation/TabNavigation'
 import AppTheme from './utilities/AppTheme'
 
 const App = () => {
   return (
     <ThemeProvider theme={AppTheme}>
       <NavigationContainer>
-        <Unauthorized />
+        <TabNavigation />
       </NavigationContainer>
     </ThemeProvider>
   )
