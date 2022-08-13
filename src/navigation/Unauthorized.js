@@ -8,7 +8,7 @@ const Stack = createNativeStackNavigator()
 
 const SomeView = ({ navigation }) => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{backgroundColor: theme.color.background}} >
       <Button title="Go Back" onPress={() => navigation.goBack()} />
     </SafeAreaView>
   )

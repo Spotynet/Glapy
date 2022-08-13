@@ -9,7 +9,7 @@ import * as Components from './style'
 const TabBar = () => {
   return (
     <Components.Container>
-      <SafeAreaView>
+      <SafeAreaView style={{backgroundColor: theme.color.background}}>
         <Components.ItemsContainer>
           <TabBarItem
             icon={<HomeIcon width={25} height={25} />}
