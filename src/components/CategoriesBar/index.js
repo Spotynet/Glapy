@@ -19,7 +19,7 @@ const CategoriesBar = ({ active, onPress, options }) => {
           </TouchableOpacity>
         )}
         ItemSeparatorComponent={() => <Components.Separator />}
-        contentContainerStyle={{ paddingLeft: 15, paddingRight: 15 }}
+        contentContainerStyle={{ paddingLeft: 16, paddingRight: 16 }}
         showsHorizontalScrollIndicator={false}
       />
     </Components.Container>

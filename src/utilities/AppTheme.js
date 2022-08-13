@@ -3,9 +3,9 @@ const appTheme = scheme => {
     primary: '#ff003a',
     secondary: '#2946DF',
     background: '#fff',
-    backgroundAlt: '#f9f9f9',
+    backgroundAlt: '#f1f1f1',
     text: '#000',
-    textAlt: '#242424',
+    textAlt: '#3A3A3A',
   }
 
   const colorScheme = {
@@ -15,7 +15,9 @@ const appTheme = scheme => {
     dark: {
       ...baseColors,
       background: '#353535',
+      backgroundAlt: '#404040',
       text: '#f9f9f9',
+      textAlt: '#C4C4C4',
     },
   }
 

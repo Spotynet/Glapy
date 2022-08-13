@@ -2,38 +2,22 @@ import styled from 'styled-components'
 
 const Container = styled.View`
   justify-content: flex-end;
-  width: 100%;
-  /* height: ${props => (props.height ? props.height : 64)}px; */
-  padding-bottom: 8px;
   background-color: ${props => props.theme.color.background};
 `
 
 const BarContainer = styled.View`
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 4px 16px;
 `
 
-const AvatarContainer = styled.View``
+const AvatarContainer = styled.View`
+  margin-left: 16px;
+`
 
 const LocationButtonContainer = styled.View`
-  margin-left: 10px;
+  flex: 1;
 `
 
-const ActionsContainer = styled.View`
-  flex-direction: row;
-`
-
-const Spacer = styled.View`
-  flex-grow: 1;
-`
-
-export {
-  Container,
-  BarContainer,
-  AvatarContainer,
-  LocationButtonContainer,
-  ActionsContainer,
-  Spacer,
-}
+export { Container, BarContainer, AvatarContainer, LocationButtonContainer }
